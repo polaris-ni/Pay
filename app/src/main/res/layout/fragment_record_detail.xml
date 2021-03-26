@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/recordDetailFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ui.record.RecordDetailFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/gray_light"
+        android:layout_marginTop="10dp">
+
+        <GridView
+            android:id="@+id/record_detail_gridview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:background="@color/white"
+            android:numColumns="5" />
+
+        <android.inputmethodservice.KeyboardView
+            android:id="@+id/keyboard_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:keyBackground="@color/gray_light"
+            android:keyTextColor="@color/black"
+            android:shadowColor="@color/white" />
+
+        <RelativeLayout
+            android:id="@+id/record_detail_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/keyboard_view"
+            android:background="@color/white"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/record_detail_details"
+                android:layout_toStartOf="@id/record_detail_money"
+                android:layout_marginEnd="40dp"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="10dp"
+                android:background="@null"
+                android:text="@string/detail_details"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/record_detail_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/record_detail_details"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:textSize="16sp"
+                tools:text="2000-11-24 00:00" />
+
+            <EditText
+                android:id="@+id/record_detail_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:background="@null"
+                android:hint="@string/record_detail_money_hint"
+                android:inputType="number"
+                android:paddingStart="8dp"
+                android:paddingTop="6dp"
+                android:paddingEnd="8dp"
+                android:paddingBottom="6dp"
+                android:textAlignment="textEnd"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:autofillHints="" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+</FrameLayout>

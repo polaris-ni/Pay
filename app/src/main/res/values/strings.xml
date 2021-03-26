@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Pay</string>
+    <string name="main_head_iv">App图标</string>
+    <string name="main_head_tv_primary">简约记账</string>
+    <string name="main_head_tv_secondary">年轻人的第一个账本</string>
+    <string name="main_cv_out_day">今日支出</string>
+    <string name="main_cv_in_day">今日收入</string>
+    <string name="main_cv_out_month">本月支出</string>
+    <string name="main_cv_in_month">本月收入</string>
+    <string name="main_detail_icon">记录图标</string>
+    <string name="record_detail_money_hint">请输入金额…</string>
+    <string name="out">支出</string>
+    <string name="in">收入</string>
+    <string name="detail_details">输入备注</string>
+    <string name="dialog_detail">请输入备注</string>
+    <string name="dialog_cancel">取消</string>
+    <string name="dialog_ensure">确定</string>
+</resources>
